@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="your-server-endpoint" method="post">
+            <div class="form-group">
+                <input type="email" required>
+                <label>Email</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>    
+            <div class="form-group">
+                <input type="password" required>
+                <label>Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <p style="color: #fff;">
+                <input type="checkbox">Remember Me &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Forgot Password?</a>
+            </p>
+            <button id="btn" type="button">Login</button>
+            <p style="color: #fff;">Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+    <div class="quiz-container" style="display: none;">
+        <div id="timer">Time Left: 30s</div> <!-- Added Timer Display -->
+        <div id="quiz"></div>
+        <button id="submit">Next Question</button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+    <script src="Quiz.js"></script>
+</body>
+</html>
